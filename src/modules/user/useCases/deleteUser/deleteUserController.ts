@@ -16,7 +16,7 @@ export class DeleteUserController {
             return res.json({ status: 'success', message: 'record deleted with success!' })
 
         } catch (err) {
-            res.status(500).json({ status: 'error', message: 'could not delete record' })
+            res.status(400).json({ status: 'error', message: 'could not update record' })
         }
 
 
