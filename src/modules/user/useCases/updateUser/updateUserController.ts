@@ -22,7 +22,7 @@ export class UpdateUserController {
 
 
         } catch (err) {
-            res.status(400).json({ status: 'error', message: 'could not delete record' })
+            res.status(400).json({ status: 'error', message: 'could not update record' })
         }
     }
 }
