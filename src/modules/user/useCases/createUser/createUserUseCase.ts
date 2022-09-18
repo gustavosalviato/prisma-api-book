@@ -8,7 +8,7 @@ export class CreateUserUseCase {
 
         const userAlreadyExists = await prisma.user.findUnique({
             where: {
-                email
+                email,
             }
         })
 

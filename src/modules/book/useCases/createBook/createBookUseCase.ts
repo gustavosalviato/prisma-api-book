@@ -7,9 +7,10 @@ export class CreateBookUseCase {
 
         const book = await prisma.book.create({
             data: {
-                title,
                 author,
                 release_date,
+                title,
+
             }
         })
 

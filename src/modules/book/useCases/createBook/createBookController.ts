@@ -10,7 +10,6 @@ export class CreateBookController {
         const createBook = new CreateBookUseCase()
 
 
-
         const result = createBook.execute({ title, author, release_date })
 
 
